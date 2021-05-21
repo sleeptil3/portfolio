@@ -3,7 +3,8 @@ module.exports = {
 		enabled: true,
 		content: [
 			'./src/*.js',
-			'./src/**/*.js',
+			'./src/Components/*.js',
+			'./src/Pages/*.js',
 			'./public/index.html'
 		],
 	},

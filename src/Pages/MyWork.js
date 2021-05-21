@@ -16,7 +16,7 @@ export default function MyWork() {
 			<div className="h-screen mx-auto w-8/12 max-width px-20 flex items-center justify-between">
 				<div className="relative z-10 flex flex-col items-start space-y-20 w-7/12 flex-shrink-0 overflow-x-visible">
 					<h1 className="font-medium text-8xl tracking-tight whitespace-nowrap ">Wizard of<br />Web & Code</h1>
-					<h2 className="font-medium text-4xl whitespace-nowrap">Creative Software Development</h2>
+					<h2 className="font-medium text-4xl whitespace-nowrap">Software, creatively done.</h2>
 					<div className="flex justify-center items-center w-full">
 						<svg className="-ml-28 animate-bounce" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M30 50V10" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -27,8 +27,8 @@ export default function MyWork() {
 				{/* BLUR BOX */}
 				<div className="relative z-0 flex-grow-0 opacity-80">
 					{/* Animation Idea: on scroll have top increment right slide (translate-x) and bottom increment left slide (-translate-x) */}
-					<img className="relative left-10 filter blur-2xl transform" src={blurbox1} alt="" />
-					<img className="relative bottom-32 right-20 filter blur-xl transform" src={blurbox2} alt="" />
+					<img className="relative left-10 filter blur-2xl" src={blurbox1} alt="" />
+					<img className="relative bottom-32 right-20 filter blur-xl" src={blurbox2} alt="" />
 				</div>
 				{/* END BLUR BOX */}
 			</div>
