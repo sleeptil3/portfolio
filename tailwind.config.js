@@ -1,32 +1,26 @@
 module.exports = {
 	purge: {
-		enabled: false,
+		enabled: true,
 		content: [
-			'./src/**.js',
+			'./src/*.js',
 			'./src/**/*.js',
-			'./src/**/**/*.js',
 			'./public/index.html'
 		],
 	},
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		fontFamily: {
-			// 'redHat': ['"Red Hat Display"', 'sans-serif'],
-			// 'mono': ['Roboto Mono', 'monospace']
+			'montserrat': ['"Montserrat"', 'sans-serif'],
 		},
 		fontWeight: {
-			// thin: 400,
-			// light: 400,
-			// normal: 500,
-			// medium: 500,
-			// semibold: 500,
-			// bold: 700,
-			// extrabold: 700,
-			// black: 900,
+			regular: 400,
+			medium: 500,
+			semibold: 600,
+			bold: 700,
 		},
 		extend: {
 			colors: {
-				// 'darkBlue': '#0B114A',
+				'primary': '#FF00A8',
 			}
 		},
 	},

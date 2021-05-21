@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	.max-width{
+		max-width: 1400px;
+	}
+	a {
+		@apply font-bold text-sm tracking-wide;
+	}
+	a:hover {
+		@apply text-primary;
+	}
+}
