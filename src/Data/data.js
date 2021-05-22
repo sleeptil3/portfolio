@@ -12,7 +12,7 @@ export const features = [
 	{
 		category: "GAME",
 		title: "Mirror",
-		description: "A short and suite javascript web game. One morning, you gaze into the mirror and are transported to a realm of friends, foes, and adventure.",
+		description: "A short and sweet javascript web game. One morning, you gaze into the mirror and are transported to a realm of friends, foes, and adventure.",
 		hashtags: "#JavaScript #HTML #CSS",
 		visit: "https://sleeptil3.github.io/Mirror/index.html",
 		code: "https://github.com/sleeptil3/Mirror",
@@ -22,7 +22,7 @@ export const features = [
 	{
 		category: "ENTHUSIAST WEBSITE",
 		title: "Just Give Me Space",
-		description: "A personal project, dedicated to space. You’ll find beautiful galleries of astronomy pictures, a not-so-subtle fangirl nod to SpaceX, and DarkSkies: a condition forecaster specifically for astronomy.",
+		description: "Beautiful galleries of astronomy pictures, a not-so-subtle fangirl nod to SpaceX, and DarkSkies: a condition forecaster specifically for astronomy.",
 		hashtags: "#React #CSS #APIDataIntegration",
 		visit: "https://space.sleeptil3software.com/",
 		code: "https://github.com/sleeptil3/react-just-give-me-space",
