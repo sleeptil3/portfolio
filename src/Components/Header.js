@@ -41,7 +41,7 @@ export default function Header() {
 							</defs>
 						</svg>
 					</a>
-					<button className="absolute top-14 right-4 sm:static focus:outline-none focus:ring-0 bg-primary px-2 py-1 sm:px-3 sm:py-2 text-sm tracking-wide hover:bg-white hover:text-primary">Hire Me</button>
+					<Link to="/info" className="absolute top-14 right-4 sm:static focus:outline-none focus:ring-0 bg-primary px-2 py-1 sm:px-3 sm:py-2 text-sm md:text-md tracking-wide hover:bg-white hover:text-primary">Hire Me</Link>
 				</div>
 			</div>
 		</header>
