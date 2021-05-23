@@ -9,8 +9,11 @@
 	.max-width{
 		max-width: 1400px;
 	}
+}
+
+@layer components {
 	a {
-		@apply font-bold text-sm tracking-wide;
+		@apply font-bold text-sm tracking-wide transition-colors duration-200;
 	}
 	a:hover {
 		@apply text-primary;
