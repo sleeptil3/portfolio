@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
 	purge: {
-		enabled: true,
+		enabled: false,
 		content: [
 			'./src/*.js',
 			'./src/Components/*.js',
@@ -25,6 +25,30 @@ module.exports = {
 		extend: {
 			colors: {
 				'primary': '#FF00A8',
+			},
+			animation: {
+				'fade-from-right': 'fade-right 2s forwards',
+				'fade-from-left': 'fade-left 2s forwards',
+				'fade-from-bottom': 'fade-bottom 2s forwards',
+				'fade': 'fade-in 1s 2s forwards',
+			},
+			keyframes: {
+				'fade-right': {
+					'0%': { opacity: 0, transform: 'translateX(100px)' },
+					'100%': { opacity: 1, transform: 'translateX(0)' }
+				},
+				'fade-left': {
+					'0%': { opacity: 0, transform: 'translateX(-100px)' },
+					'100%': { opacity: 1, transform: 'translateX(0)' }
+				},
+				'fade-bottom': {
+					'0%': { opacity: 0, transform: 'translateY(100px)' },
+					'100%': { opacity: 1, transform: 'translateY(0)' }
+				},
+				'fade-in': {
+					'0%': { opacity: 0 },
+					'100%': { opacity: 1 }
+				},
 			}
 		},
 	},
