@@ -25,7 +25,7 @@ export const features = [
 		description: "Beautiful galleries of astronomy pictures, a not-so-subtle fangirl nod to SpaceX, and DarkSkies: a condition forecaster specifically for astronomy.",
 		hashtags: "#React #CSS #APIDataIntegration",
 		visit: "https://space.sleeptil3software.com/",
-		code: "https://github.com/sleeptil3/react-just-give-me-space",
+		code: "https://github.com/sleeptil3/react-just-give-me-space/tree/main",
 		reverse: false,
 		image: "justGiveMeSpace"
 	},
