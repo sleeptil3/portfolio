@@ -44,7 +44,7 @@ export default function MyWork() {
 				{/* END BLUR BOX */}
 			</div>
 			{/* FEATURED PROJECT */}
-			<div id="featured" className="relative mx-auto sm:w-11/12 md:w-10/12 xl:w-9/12 2xl:w-8/12 lg:px-20 max-width md:h-screen md:-mb-32 mb-20 -mt-30 md:mt-0">
+			<div id="featured" className="relative mx-auto sm:w-11/12 md:w-10/12 xl:w-9/12 2xl:w-8/12 lg:px-20 max-width md:h-screen mb-20 sm:mb-56 -mt-30 md:mt-0">
 				<div className="">
 					<h3 className="font-semibold text-primary text-sm text-center">FEATURED PROJECT</h3>
 					<h2 className="font-bold text-4xl text-center py-2">CodeLockr</h2>
@@ -114,7 +114,7 @@ export default function MyWork() {
 						<p className="text-md sm:text-sm md:text-md xl:text-lg font-regular leading-relaxed">A National Park finder pulling data from the National Parks API.</p>
 						<p className="text-gray-400 text-xs font-bold tracking-wide">#React #CSS #APIDataIntegration</p>
 						<div className="flex space-x-2 items-center">
-							<a href="https://suspicious-cray-30c99b.netlify.app" target="_blank" rel="noopener noreferrer">VISIT</a>
+							<a href="https://parkbrowser.netlify.app/" target="_blank" rel="noopener noreferrer">VISIT</a>
 							<p className="text-gray-400 font-bold text-xs">|</p>
 							<a href="https://git.generalassemb.ly/sclary110/hw-W05D05-react-router-national-parks/tree/main" target="_blank" rel="noopener noreferrer">CODE</a>
 						</div>
