@@ -21,7 +21,7 @@ export default function MyInfo() {
 					<h1 className="relative z-10 font-semibold text-4xl sm:text-5xl md:text-6xl tracking-tight">Info</h1>
 					<h2 className="font-medium text-md sm:text-lg md:text-xl">Let's chat.</h2>
 				</div>
-				<div data-aos="fade-up" className="flex sm:flex-col flex-wrap space-x-10 sm:space-x-0 sm:mr-60 relative px-4 sm:ml-20 sm:pl-20 z-10 font-medium text-lg sm:text-xl md:text-2xl">
+				<div data-aos="fade-up" className="flex sm:flex-col flex-wrap space-x-10 sm:space-x-0 sm:mr-10 relative px-4 sm:ml-20 sm:pl-20 z-10 font-medium text-lg sm:text-xl md:text-2xl">
 					<div>
 						<p className="font-semibold">Contact</p>
 						<a href="https://www.linkedin.com/in/shclary/" target="_blank" rel="noopener noreferrer" className="block text-lg font-regular hover:text-primary">LinkedIn</a>
@@ -29,8 +29,11 @@ export default function MyInfo() {
 						<br />
 					</div>
 					<div>
-						<p className="font-semibold">Resume</p>
-						<a href="https://drive.google.com/file/d/1SgCHA2ZJTfTdU079DKiAw5SPvaGwX0Ja/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block text-lg font-regular hover:text-primary">Download</a>
+						<p className="font-semibold">Downloads</p>
+						<a href="https://bit.ly/shawnClary-resume" target="_blank" rel="noopener noreferrer" className="block text-lg font-regular hover:text-primary">Resume</a>
+						<a href="https://bit.ly/sc-statements" target="_blank" rel="noopener noreferrer" className="block text-lg font-regular hover:text-primary">Recommendations</a>
+						<a href="https://bit.ly/sclary-previs" target="_blank" rel="noopener noreferrer" className="block text-lg font-regular hover:text-primary">Mockup & Design Examples</a>
+						<a href="https://bit.ly/sclary-prReel" target="_blank" rel="noopener noreferrer" className="block text-lg font-regular hover:text-primary">Video Production Reel</a>
 						<br />
 					</div>
 					<div>

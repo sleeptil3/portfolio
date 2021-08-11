@@ -80,11 +80,11 @@ export default function MyWork() {
 			</div>
 			{/* END FEATURED PROJECT */}
 			{/* BEGIN MAPPED PROJECTS */}
-			<div id="mapped" ></div>
+			<div id="mapped"></div>
 			{features.map(feature => {
 				return (
 					<div key={uuid()} className="relative bg-black mb-20 sm:mb-48 lg:mb-64">
-						<ProjectFeature image={feature.image} category={feature.category} title={feature.title} description={feature.description} hashtags={feature.hashtags} visit={feature.visit} code={feature.code} reverse={feature.reverse} />
+						<ProjectFeature image={feature.image} category={feature.category} title={feature.title} description={feature.description} hashtags={feature.hashtags} visit={feature.visit} frontCode={feature.frontCode} backCode={feature.backCode} reverse={feature.reverse} />
 						<div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
 							{!feature.reverse ?
 								<div className="absolute left-20 bottom-0 z-0 opacity-30 transform rotate-180 scale-90">

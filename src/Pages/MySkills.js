@@ -10,7 +10,7 @@ export default function MySkills() {
 	}, [])
 
 	return (
-		<div className="flex justify-center items-center mb-10 sm:mb-0 sm:mt-32">
+		<div className="flex justify-center items-center mb-10 sm:mb-20 sm:mt-32">
 			<div className="relative flex flex-col sm:flex-row mt-8 sm:mt-0 sm:justify-center sm:items-center h-full w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 max-width sm:px-10">
 				<div data-aos="fade-down" className="mb-8 sm:mb-0">
 					<h1 className="relative z-10 font-semibold text-4xl sm:text-5xl md:text-6xl tracking-tight">Skills</h1>
@@ -18,13 +18,14 @@ export default function MySkills() {
 				</div>
 				<div data-aos="fade-up" className="relative px-4 sm:pl-20 z-10 font-medium">
 					<p className="text-lg font-semibold">Code</p>
-					<p className="text-md">JavaScript | Python</p>
+					<p className="text-md">JavaScript | Python | Swift</p>
 					<br />
 					<p className="text-lg font-semibold">Front End</p>
 					<p className="text-md">React | HTML | CSS | Tailwind | Sass</p>
 					<br />
 					<p className="text-lg font-semibold">Back End</p>
-					<p className="text-md">Node.JS | Express | Django | MongoDB | PostgreSQL</p>
+					<p className="text-md">Node.JS | Express | MongoDB | Django</p>
+					<p>PostgreSQL | User Authentication</p>
 					<br />
 					<p className="text-lg font-semibold">Design</p>
 					<p className="text-md">Figma | Adobe Creative Suite</p>

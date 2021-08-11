@@ -3,20 +3,18 @@ import Aos from 'aos'
 import mercuryMarathon from '../images/screenshots/mercurymarathon.png'
 import justGiveMeSpace from '../images/screenshots/justgivemespace.png'
 import mirror from '../images/screenshots/mirror.png'
+import euchre from '../images/screenshots/euchre.png'
 
-export default function ProjectFeature({ category, title, description, hashtags, visit, code, reverse, image }) {
+export default function ProjectFeature({ category, title, description, hashtags, visit, frontCode, backCode, reverse, image }) {
 	const [img, setImg] = useState()
 
 	useEffect(() => {
-		if (image === 'mercuryMarathon') {
-			console.log('mercu')
-			setImg(<img src={mercuryMarathon} alt="" />)
-		}
-		if (image === 'justGiveMeSpace') {
-			setImg(<img src={justGiveMeSpace} alt="" />)
-		}
-		if (image === 'mirror') {
-			setImg(<img src={mirror} alt="" />)
+		switch (image) {
+			case 'mercuryMarathon': { setImg(<img src={mercuryMarathon} alt="" />); break; }
+			case 'justGiveMeSpace': { setImg(<img src={justGiveMeSpace} alt="" />); break; }
+			case 'mirror': { setImg(<img src={mirror} alt="" />); break; }
+			case 'euchre': { setImg(<img src={euchre} alt="" />); break; }
+			default: console.error("image not found in screenshots")
 		}
 	}, [image])
 
@@ -39,11 +37,14 @@ export default function ProjectFeature({ category, title, description, hashtags,
 					<p className="text-gray-400 text-sm font-bold tracking-wide">{hashtags}</p>
 					<div className="flex space-x-2">
 						<a href={visit} target="_blank" rel="noopener noreferrer">VISIT</a>
-						<p className="text-gray-400 font-bold text-sm">|</p>
-						<a href={code} target="_blank" rel="noopener noreferrer">CODE</a>
+						<p className="text-gray-400 font-bold text-sm px-2">|</p>
+						<p className="text-white font-bold text-sm pr-2">VIEW CODE:</p>
+						<a className="font-regular cursor-pointer" href={frontCode} target="_blank" rel="noopener noreferrer">Front</a>
+						{backCode !== "" && <p className="text-gray-400 font-bold text-sm px-1">•</p>}
+						{backCode !== "" && <a className="font-regular cursor-pointer" href={backCode} target="_blank" rel="noopener noreferrer">Back</a>}
 					</div>
 				</div>
 			</div>
-		</div >
+		</div>
 	)
 }
