@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import Aos from 'aos'
 import blurbox1 from '../images/blurboxes/1.png'
@@ -17,7 +17,7 @@ import { v4 as uuid } from 'uuid'
 
 export default function MyWork() {
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		Aos.init({ duration: 2000 })
 	}, [])
 

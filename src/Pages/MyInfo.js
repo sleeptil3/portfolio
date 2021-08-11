@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import Aos from 'aos'
 
 import blurbox1 from '../images/blurboxes/1.png'
@@ -6,7 +6,7 @@ import blurbox2 from '../images/blurboxes/2.png'
 
 export default function MyInfo() {
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		Aos.init({ duration: 2000 })
 	}, [])
 
