@@ -7,7 +7,7 @@ import blurbox3 from '../images/blurboxes/3.png'
 import blurbox4 from '../images/blurboxes/4.png'
 import blurbox5 from '../images/blurboxes/5.png'
 import blurbox6 from '../images/blurboxes/6.png'
-import codelockr from '../images/screenshots/codelockr.png'
+import euchre from '../images/screenshots/euchrenight.png'
 import nationalparks from '../images/screenshots/nationalparks.png'
 import scribble from '../images/screenshots/scribble.png'
 import weatherbyshawn from '../images/screenshots/weatherbyshawn.png'
@@ -46,19 +46,23 @@ export default function MyWork() {
 			{/* FEATURED PROJECT */}
 			<div id="featured" className="relative mx-auto sm:w-11/12 md:w-10/12 xl:w-9/12 2xl:w-8/12 lg:px-20 max-width md:h-screen mb-20 sm:mb-56 -mt-30 md:mt-0">
 				<div className="">
-					<h3 className="font-semibold text-primary text-sm text-center">FEATURED PROJECT</h3>
-					<h2 className="font-bold text-4xl text-center py-2">CodeLockr</h2>
+					<h3 className="font-semibold text-primary text-sm text-center">FEATURED iOS APP</h3>
+					<h2 className="font-bold text-4xl text-center py-2">Euchre Night</h2>
 				</div>
 				<div className="mt-4 sm:mt-20 relative flex md:flex-row flex-col-reverse justify-around xl:justify-between items-center">
 					<div data-aos="fade-right" className="mt-10 sm:mt-0 relative z-10 flex flex-col space-y-6 w-10/12 md:w-1/2 md:pr-20 lg:pr-32">
 						<p className="text-lg lg:text-xl xl:text-2xl 2xl:text-2xl font-regular leading-relaxed">
-							<span className="font-semibold">CodeLockr</span> enables web developers and software engineers to have easy access to their coding 'Snippets', neatly organized into folders, and looking fantastic.
+							<span className="font-semibold">Euchre Night</span>, an app built for iOS, is a one-player version of the classic card game of the same name.</p>
+						<p>Join an AI teammate against two AI opponents for nights of endless fun.</p>
+						<p>Included are multiple custom-designed, retina-quality themes for when you want to change things up.
 						</p>
-						<p className="text-gray-400 text-sm font-bold tracking-wide">#FullStack #MongoDB #Express #React #NodeJS</p>
+						<p className="text-gray-400 text-sm font-bold tracking-wide">#ReactNative #iOS #AI #GameDesign</p>
 						<div className="flex space-x-2">
-							<a href="https://www.codelockr.com/" target="_blank" rel="noopener noreferrer">VISIT</a>
+							<a className="pointer-events-none text-gray-500" href="www.google.com" target="_blank" rel="noopener noreferrer">DOWNLOAD COMING SOON</a>
 							<p className="text-gray-400 font-bold text-sm">|</p>
-							<a href="https://github.com/sleeptil3/codelockr-react" target="_blank" rel="noopener noreferrer">CODE</a>
+							<a href="https://github.com/sleeptil3/euchre-native" target="_blank" rel="noopener noreferrer">CODE</a>
+							<p className="text-gray-400 font-bold text-sm">|</p>
+							<a href="https://www.figma.com/file/Oe1LIvWV7E8X5QdlW6T5Cv/EuchreGame?node-id=0%3A1" target="_blank" rel="noopener noreferrer">FIGMA</a>
 						</div>
 					</div>
 					<div className="hidden sm:block absolute -left-40 z-0">
@@ -66,7 +70,7 @@ export default function MyWork() {
 						<img data-aos="fade-right" className="relative bottom-10 left-7 filter blur-lg" src={blurbox3} alt="" />
 					</div>
 					<div data-aos="zoom-in-left" className="w-10/12 mt-16 mb-10 md:mb-0 md:w-1/2 relative z-10">
-						<img className="transform scale-125 " src={codelockr} alt="" />
+						<img className="transform scale-125 " src={euchre} alt="" />
 					</div>
 				</div>
 				<div data-aos-offset="200" data-aos="fade" className="hidden sm:flex justify-center items-center mt-32 mx-auto">
