@@ -21,7 +21,7 @@ export default function MySkills() {
 					<p className="text-md">JavaScript | Python | Swift</p>
 					<br />
 					<p className="text-lg font-semibold">Front End</p>
-					<p className="text-md">React | HTML | CSS | Tailwind | Sass</p>
+					<p className="text-md">React | React-Native | HTML | CSS | Tailwind</p>
 					<br />
 					<p className="text-lg font-semibold">Back End</p>
 					<p className="text-md">Node.JS | Express | MongoDB | Django</p>

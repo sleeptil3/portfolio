@@ -2,7 +2,7 @@ export const features = [
 	{
 		category: "DEVELOPER TOOL",
 		title: "CODELOCKR",
-		description: "CODELOCKR nables web developers and software engineers to have easy access to their coding 'Snippets', neatly organized into folders, and looking fantastic.",
+		description: "CODELOCKR enables web developers and software engineers to have easy access to their coding 'Snippets', neatly organized into folders, and looking fantastic.",
 		hashtags: "#FullStack #MongoDB #Express #React #NodeJS",
 		visit: "https://www.codelockr.com/",
 		frontCode: "https://github.com/sleeptil3/codelockr-react",
