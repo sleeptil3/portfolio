@@ -4,6 +4,7 @@ import mercuryMarathon from '../images/screenshots/mercurymarathon.png'
 import justGiveMeSpace from '../images/screenshots/justgivemespace.png'
 import mirror from '../images/screenshots/mirror.png'
 import euchre from '../images/screenshots/euchre.png'
+import codelockr from '../images/screenshots/codelockr.png'
 
 export default function ProjectFeature({ category, title, description, hashtags, visit, frontCode, backCode, reverse, image }) {
 	const [img, setImg] = useState()
@@ -13,7 +14,7 @@ export default function ProjectFeature({ category, title, description, hashtags,
 			case 'mercuryMarathon': { setImg(<img src={mercuryMarathon} alt="" />); break; }
 			case 'justGiveMeSpace': { setImg(<img src={justGiveMeSpace} alt="" />); break; }
 			case 'mirror': { setImg(<img src={mirror} alt="" />); break; }
-			case 'euchre': { setImg(<img src={euchre} alt="" />); break; }
+			case 'codelockr': { setImg(<img src={codelockr} alt="" />); break; }
 			default: console.error("image not found in screenshots")
 		}
 	}, [image])

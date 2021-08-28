@@ -1,14 +1,14 @@
 export const features = [
 	{
-		category: "GAME",
-		title: "Euchre Online",
-		description: "A one player version of the classic card game. This features detailed state management & AI that makes multiple complex decisions in both teammate and opponent roles.",
-		hashtags: "#FullStack #MERN #React #AI #TailWind",
-		visit: "https://euchre.sleeptil3software.com/",
-		frontCode: "https://github.com/sleeptil3/euchre-react",
-		backCode: "https://github.com/sleeptil3/euchre-api",
+		category: "DEVELOPER TOOL",
+		title: "CODELOCKR",
+		description: "CODELOCKR nables web developers and software engineers to have easy access to their coding 'Snippets', neatly organized into folders, and looking fantastic.",
+		hashtags: "#FullStack #MongoDB #Express #React #NodeJS",
+		visit: "https://www.codelockr.com/",
+		frontCode: "https://github.com/sleeptil3/codelockr-react",
+		backCode: "https://github.com/sleeptil3/codelockr-api",
 		reverse: false,
-		image: "euchre"
+		image: "codelockr"
 	},
 	{
 		category: "EVENT WEBSITE",
