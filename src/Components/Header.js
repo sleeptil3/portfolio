@@ -12,7 +12,7 @@ export default function Header() {
 		<header
 			data-aos-once="true"
 			data-aos="slide-down"
-			className="relative z-10 w-screen sm:h-auto py-2 sm:py-8 px-2 flex items-center justify-center bg-black text-white tracking-wide overflow-x-hidden">
+			className="relative z-10 w-screen sm:h-auto py-2 sm:py-8 px-2 flex items-center justify-center bg-black text-white tracking-wide">
 			<div className="w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 max-width flex justify-between items-center">
 				<div className="flex flex-col justify-start items-baseline md:flex-row md:space-x-12 lg:space-x-20 flex-wrap">
 					<Link to="/">
@@ -30,7 +30,6 @@ export default function Header() {
 						</Link>
 					</div>
 				</div>
-				{/* sm:ml-20 */}
 				<div className="sm:space-x-4 sm:flex-grow flex flex-col items-center justify-center sm:flex-row sm:items-center sm:justify-end">
 					<a className="pb-2 sm:pb-0" href="https://www.linkedin.com/in/shclary/" target="_blank" rel="noopener noreferrer">
 						<svg className="w-7 sm:w-auto text-white fill-current hover:text-primary transform transition-colors duration-200" width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +53,7 @@ export default function Header() {
 					</a>
 					<Link
 						to="/info"
-						className="absolute top-24 right-2 sm:static flex justify-center items-center bg-gradient-to-r from-pink-600 to-purple-700 hover:bg-white focus:outline-none focus:ring-0 px-3 py-1 lg:px-3 sm:py-2 text-xs md:text-md tracking-normal font-regular"
+						className="absolute top-24 right-2 sm:static flex justify-center items-center bg-gradient-to-r from-pink-600 to-purple-700 hover:bg-white focus:outline-none focus:ring-0 px-2 sm:px-3 py-1 lg:px-3 sm:py-2 text-xs md:text-md tracking-normal font-regular"
 					>
 						Hire Me
 					</Link>
