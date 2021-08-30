@@ -8,6 +8,7 @@ import blurbox13x from '../images/blurboxes/1@3x.png'
 import blurbox2 from '../images/blurboxes/2.png'
 import blurbox22x from '../images/blurboxes/2@2x.png'
 import blurbox23x from '../images/blurboxes/2@3x.png'
+import { Link } from 'react-router-dom'
 
 export default function MyInfo() {
 
@@ -36,13 +37,13 @@ export default function MyInfo() {
 			<div className="flex flex-col sm:flex-row sm:justify-center sm:items-center sm:px-10 py-10 px-5 h-full w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 max-width">
 				<div data-aos-once="true" data-aos="fade-down" className="mb-8 sm:mb-0">
 					<h1 className="relative z-10 font-semibold text-4xl sm:text-5xl md:text-6xl tracking-tight">Info</h1>
-					<h2 className="font-medium text-md sm:text-lg md:text-xl">Let's chat.</h2>
+					<h2 className="font-medium text-md sm:text-lg md:text-xl">About Me.</h2>
 				</div>
 				<div data-aos-once="true" data-aos="fade-up" className="flex flex-col sm:mr-10 relative px-4 sm:ml-20 sm:pl-20 z-10 font-medium text-lg sm:text-xl md:text-2xl">
 					<div>
-						<p className="font-semibold">Contact</p>
+						<p className="font-semibold">Connect</p>
 						<a href="https://www.linkedin.com/in/shclary/" target="_blank" rel="noopener noreferrer" className="block text-lg font-regular hover:text-primary">LinkedIn</a>
-						<a href="mailto:sleeptil3software@gmail.com" target="_blank" rel="noopener noreferrer" className="block text-lg font-regular hover:text-primary">Email</a>
+						<Link to="/contact" className="block text-lg font-regular hover:text-primary">Contact Form</Link>
 						<br />
 					</div>
 					<div>

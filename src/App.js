@@ -4,6 +4,7 @@ import MyWork from './Pages/MyWork'
 import MyInfo from './Pages/MyInfo'
 import MySkills from './Pages/MySkills'
 import Footer from './Components/Footer'
+import ContactForm from './Pages/ContactForm'
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 						<Route exact path="/" component={MyWork} />
 						<Route path="/skills" component={MySkills} />
 						<Route path="/info" component={MyInfo} />
+						<Route path="/contact" component={ContactForm} />
 					</Switch>
 				</main>
 			</div>
