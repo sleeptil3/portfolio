@@ -7,10 +7,10 @@ import Footer from './Components/Footer'
 
 function App() {
 	return (
-		<div className="min-h-screen font-montserrat flex flex-col justify-between">
-			<div>
+		<div className="min-h-screen font-montserrat flex flex-col justify-between max-w-screen">
+			<div className="flex-grow flex flex-col w-full">
 				<Header />
-				<main>
+				<main className="flex-grow flex flex-col w-full">
 					<Switch>
 						<Route exact path="/" component={MyWork} />
 						<Route path="/skills" component={MySkills} />

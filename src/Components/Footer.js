@@ -2,9 +2,20 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 
 import blurbox1 from '../images/blurboxes/1.png'
+import blurbox12x from '../images/blurboxes/1@2x.png'
+import blurbox13x from '../images/blurboxes/1@3x.png'
+
 import blurbox2 from '../images/blurboxes/2.png'
+import blurbox22x from '../images/blurboxes/2@2x.png'
+import blurbox23x from '../images/blurboxes/2@3x.png'
+
 import blurbox3 from '../images/blurboxes/3.png'
+import blurbox32x from '../images/blurboxes/3@2x.png'
+import blurbox33x from '../images/blurboxes/3@3x.png'
+
 import blurbox4 from '../images/blurboxes/4.png'
+import blurbox42x from '../images/blurboxes/4@2x.png'
+import blurbox43x from '../images/blurboxes/4@3x.png'
 
 export default function Footer() {
 
@@ -13,7 +24,7 @@ export default function Footer() {
 	}, [])
 
 	return (
-		<footer data-aos="fade" className="relative w-screen py-12 sm:py-24 space-y-2 flex flex-col items-center justify-center bg-black text-white tracking-wide overflow-hidden">
+		<footer data-aos-once="true" data-aos="fade" className="relative w-screen py-12 sm:py-24 space-y-2 flex flex-col items-center justify-center bg-black text-white tracking-wide overflow-hidden">
 			<a className="relative z-10" href="https://github.com/sleeptil3" target="_blank" rel="noopener noreferrer">
 				<svg className="text-white hover:text-primary fill-current transition-colors" width="33" height="32" viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg">
 					<g clipPath="url(#clip0)">
@@ -29,16 +40,36 @@ export default function Footer() {
 			<div>
 				<h1 className="relative z-10 font-semibold text-lg tracking-wide text-center">Shawn Clary</h1>
 			</div>
-			<div className="absolute z-10 bottom-3">
-				<p className="text-center text-gray-300 text-xs font-regular tracking-wide">Web Design ©2021 • Shawn Clary • Sleeptil3Software</p>
+			<div className="relative z-10">
+				<p className="text-center text-gray-300 text-xs font-regular tracking-wide -mt-1">Design ©2021 • Shawn Clary • Sleeptil3Software</p>
 			</div>
 			<div className="absolute left-0 opacity-50 z-0">
-				<img data-aos="fade-right" className="w-2/6 relative left-10 top-4 filter blur-3xl" src={blurbox1} alt="" />
-				<img data-aos="fade-left" className="w-2/6 relative bottom-8 left-72 filter blur-2xl" src={blurbox2} alt="" />
+				<img
+					data-aos-once="true" data-aos="fade-right" className="w-2/6 relative left-10 top-4 filter blur-3xl"
+					alt=""
+					src={blurbox1}
+					srcSet={`${blurbox12x} 2x, ${blurbox13x} 3x`}
+				/>
+				<img
+					data-aos-once="true" data-aos="fade-left" className="w-2/6 relative bottom-8 left-72 filter blur-2xl"
+					alt=""
+					src={blurbox2}
+					srcSet={`${blurbox22x} 2x, ${blurbox23x} 3x`}
+				/>
 			</div>
 			<div className="absolute right-0 bottom-3 z-0">
-				<img data-aos="fade-up" className="w-2/6 relative left-48 filter blur-2xl" src={blurbox4} alt="" />
-				<img data-aos="fade-down" className="w-1/2 relative bottom-4 left-7 filter blur-xl" src={blurbox3} alt="" />
+				<img
+					data-aos-once="true" data-aos="fade-up" className="w-2/6 relative left-48 filter blur-2xl"
+					alt=""
+					src={blurbox4}
+					srcSet={`${blurbox42x} 2x, ${blurbox43x} 3x`}
+				/>
+				<img
+					data-aos-once="true" data-aos="fade-down" className="w-1/2 relative bottom-4 left-7 filter blur-xl"
+					alt=""
+					src={blurbox3}
+					srcSet={`${blurbox32x} 2x, ${blurbox33x} 3x`}
+				/>
 			</div>
 		</footer>
 	)

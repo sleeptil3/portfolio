@@ -72,10 +72,13 @@ module.exports = {
 					'.breakpoint-display': {
 						color: 'white',
 						position: 'fixed',
-						backgroundColor: 'black',
+						left: "50%",
+						transform: "translate(-50%)",
+						fontSize: 8,
+						zIndex: 100,
+						backgroundColor: 'green',
 						textTransform: 'uppercase',
-						borderRadius: theme('borderRadius.xl'),
-						padding: theme('spacing.2'),
+						padding: theme('spacing.1'),
 						'&::after': {
 							content: `'default'`,
 						},
