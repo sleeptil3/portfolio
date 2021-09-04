@@ -3,17 +3,17 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
 	purge: {
+		enabled: true,
 		content: [
 			'./src/*.js',
-			'./src/Components/*.js',
-			'./src/Pages/*.js',
+			'./src/**/*.js',
 			'./public/index.html'
 		],
 	},
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		fontFamily: {
-			'montserrat': ['"Montserrat"', 'sans-serif'],
+			'montserrat': [ '"Montserrat"', 'sans-serif' ],
 		},
 		fontWeight: {
 			regular: 400,
@@ -59,9 +59,9 @@ module.exports = {
 			const screens = theme('screens', {})
 			const mediaQueries = _.map(screens, (width, breakpoint) => {
 				return {
-					[`@media (min-width: ${width})`]: {
+					[ `@media (min-width: ${ width })` ]: {
 						'.breakpoint-display::after': {
-							content: `'${breakpoint}'`,
+							content: `'${ breakpoint }'`,
 						},
 					},
 				}
