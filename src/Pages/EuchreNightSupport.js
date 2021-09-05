@@ -23,9 +23,9 @@ export default function EuchreNightSupport() {
 					</div>
 					<div className="font-normal text-xs leading-normal">
 						<p className="text-gray-700">
-							<span className="font-bold">IMPORTANT: </span>this project is hosted publically on GitHub and all issues are tracked there.</p>
+							<span className="font-bold">IMPORTANT: </span>this project is hosted publicly on GitHub and all issues are tracked there.</p>
 						<br />
-						<p className="text-gray-700"><span className="font-bold">Anything you submit using this link will be publically viewable</span>. Do NOT include any personal or sensitive information. Treat this as if it were a post to a discussion board.</p>
+						<p className="text-gray-700"><span className="font-bold">Anything you submit using this link will be publicly viewable</span>. Do NOT include any personal or sensitive information. Treat this as if it were a post to a discussion board.</p>
 						<br />
 						<p className="text-gray-700">
 							The only infomation that appears is what you type in the subject and body of the email. Your email address will not be displayed. If you prefer to contact me directly, use the<Link to="/contact"> contact form</Link> on this website to send me a message.
