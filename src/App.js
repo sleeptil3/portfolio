@@ -5,6 +5,7 @@ import MyInfo from './Pages/MyInfo'
 import MySkills from './Pages/MySkills'
 import Footer from './Components/Footer'
 import ContactForm from './Pages/ContactForm'
+import EuchreNightSupport from './Pages/EuchreNightSupport'
 
 function App() {
 	return (
@@ -13,10 +14,11 @@ function App() {
 				<Header />
 				<main className="flex-grow flex flex-col w-full">
 					<Switch>
-						<Route exact path="/" component={MyWork} />
-						<Route path="/skills" component={MySkills} />
-						<Route path="/info" component={MyInfo} />
-						<Route path="/contact" component={ContactForm} />
+						<Route exact path="/" component={ MyWork } />
+						<Route path="/skills" component={ MySkills } />
+						<Route path="/info" component={ MyInfo } />
+						<Route path="/contact" component={ ContactForm } />
+						<Route path="/euchrenight/support" component={ EuchreNightSupport } />
 					</Switch>
 				</main>
 			</div>

@@ -2,22 +2,22 @@ import { useState, useLayoutEffect } from 'react'
 import Aos from 'aos'
 
 export default function ContactForm() {
-	const [showForm, setShowForm] = useState(true)
-	const [formData, setFormData] = useState({
+	const [ showForm, setShowForm ] = useState(true)
+	const [ formData, setFormData ] = useState({
 		name: "",
 		email: "",
 		message: ""
 	})
 
 	const handleChange = (e) => {
-		const [key, value] = [e.target.name, e.target.value]
+		const [ key, value ] = [ e.target.name, e.target.value ]
 		console.log(key, value)
-		setFormData({ ...formData, [key]: value })
+		setFormData({ ...formData, [ key ]: value })
 	}
 
 	const encode = (data) => {
 		return Object.keys(data)
-			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[ key ]))
 			.join("&")
 	}
 
@@ -48,25 +48,25 @@ export default function ContactForm() {
 					<h1 className="relative z-10 font-semibold text-4xl sm:text-5xl md:text-6xl tracking-tight">Contact</h1>
 					<h2 className="font-medium text-md sm:text-lg md:text-xl">Let's chat.</h2>
 				</div>
-				{showForm ?
+				{ showForm ?
 					<form
 						name="contact"
-						onSubmit={handleSubmit}
+						onSubmit={ handleSubmit }
 						data-aos-once="true" data-aos="fade-up"
 						className="flex flex-col relative px-4 sm:ml-20 mr-10 sm:pl-20 z-10 font-medium text-lg sm:text-xl md:text-2xl space-y-4">
 						<div className="">
 							<label className="font-semibold text-lg block">
-								Your Name<input className="block border w-full border-black rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-0" type="text" name="name" value={formData.name} onChange={handleChange} />
+								Your Name<input className="block border w-full border-black rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-0" type="text" name="name" value={ formData.name } onChange={ handleChange } />
 							</label>
 						</div>
 						<div>
 							<label className="font-semibold text-lg block">
-								Email<input className="block border w-full border-black rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-0" type="text" name="email" value={formData.email} onChange={handleChange} />
+								Email<input className="block border w-full border-black rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-0" type="text" name="email" value={ formData.email } onChange={ handleChange } />
 							</label>
 						</div>
 						<div>
 							<label className="font-semibold text-lg block">
-								Message<textarea className="block h-24 w-full border border-black rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-0" type="text" name="message" value={formData.message} onChange={handleChange} />
+								Message<textarea className="block h-24 w-full border border-black rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-0" type="text" name="message" value={ formData.message } onChange={ handleChange } />
 							</label>
 						</div>
 						<input type="submit" className="py-2 hover:text-white text-gray-200 w-24 relative top-4 font-regular text-sm cursor-pointer bg-gradient-to-r from-pink-600 to-purple-700 focus:outline-none focus:ring-0 " />
