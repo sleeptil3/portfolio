@@ -47,7 +47,6 @@ import weatherbyshawn3x from "../images/screenshots/weatherbyshawn@3x.png";
 
 import ProjectFeature from "../Components/ProjectFeature";
 import { features } from "../Data/data";
-import { v4 as uuid } from "uuid";
 
 export default function MyWork() {
 	useEffect(() => {
@@ -69,7 +68,7 @@ export default function MyWork() {
 					</h1>
 					<h2 className="font-medium text-xl sm:text-3xl md:text-4xl whitespace-nowrap">Software, creatively done.</h2>
 					<div className="flex justify-center items-center w-full animate-fade opacity-0">
-						<ScrollLink offset={-20} to="featured" smooth={true} duration={1000}>
+						<ScrollLink offset={ -20 } to="featured" smooth={ true } duration={ 1000 }>
 							<svg className="cursor-pointer animate-bounce" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M30 50V10" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 								<path d="M12.5 32.5L30 50L47.5 32.5" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -78,23 +77,23 @@ export default function MyWork() {
 					</div>
 				</div>
 				<div className="relative z-0 flex-grow-0">
-					<img className="relative left-4 top-10 sm:top-0 sm:left-10 animate-fade-from-right" alt="" src={blurbox1} srcSet={`${blurbox12x} 2x, ${blurbox13x} 3x`} />
+					<img className="relative left-4 top-10 sm:top-0 sm:left-10 animate-fade-from-right" alt="" src={ blurbox1 } srcSet={ `${ blurbox12x } 2x, ${ blurbox13x } 3x` } />
 					<img
 						className="relative bottom-60 sm:bottom-44 right-24 sm:right-20 opacity-50 sm:opacity-100 animate-fade-from-bottom"
 						alt=""
-						src={blurbox2}
-						srcSet={`${blurbox22x} 2x, ${blurbox23x} 3x`}
+						src={ blurbox2 }
+						srcSet={ `${ blurbox22x } 2x, ${ blurbox23x } 3x` }
 					/>
 				</div>
 			</div>
-			{/* FEATURED PROJECT */}
+			{/* FEATURED PROJECT */ }
 			<div id="featured" className="relative mx-auto sm:w-11/12 xl:w-9/12 sm:px-10 md:px-0 lg:px-10 2xl:px-20 max-width md:h-screen mb-20 sm:mb-48 md:mt-0">
 				<div className="flex flex-col items-center justify-center">
 					<h3 className="font-semibold text-primary text-sm">FEATURED iOS APP</h3>
 					<h2 className="font-bold text-4xl py-2">Euchre Night</h2>
 					<p>Available Now for iOS</p>
 					<a href="https://apps.apple.com/us/app/euchre-night/id1582666948" target="_blank" rel="noreferrer">
-						<img className="mt-5" alt="Download from the Apple AppStore" src={appstore} srcSet={`${appstore2x} 2x, ${appstore3x} 3x`} />
+						<img className="mt-5" alt="Download from the Apple AppStore" src={ appstore } srcSet={ `${ appstore2x } 2x, ${ appstore3x } 3x` } />
 					</a>
 				</div>
 				<div className="mt-4 relative flex md:flex-row flex-col-reverse justify-around xl:justify-between items-center">
@@ -119,7 +118,7 @@ export default function MyWork() {
 							</a>
 						</div>
 						<div data-aos-offset="200" data-aos-once="true" data-aos="fade" className="hidden sm:flex justify-center items-center pt-10">
-							<ScrollLink offset={-100} to="mapped" smooth={true} duration={1500}>
+							<ScrollLink offset={ -100 } to="mapped" smooth={ true } duration={ 1500 }>
 								<svg className="cursor-pointer animate-bounce" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M30 50V10" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 									<path d="M12.5 32.5L30 50L47.5 32.5" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -128,33 +127,33 @@ export default function MyWork() {
 						</div>
 					</div>
 					<div className="hidden sm:block absolute -left-40 z-0">
-						<img data-aos-once="true" data-aos="fade-left" className="relative left-48 filter blur-xl" alt="" src={blurbox4} srcSet={`${blurbox42x} 2x, ${blurbox43x} 3x`} />
-						<img data-aos-once="true" data-aos="fade-right" className="relative bottom-10 left-7 filter blur-lg" alt="" src={blurbox3} srcSet={`${blurbox32x} 2x, ${blurbox33x} 3x`} />
+						<img data-aos-once="true" data-aos="fade-left" className="relative left-48 filter blur-xl" alt="" src={ blurbox4 } srcSet={ `${ blurbox42x } 2x, ${ blurbox43x } 3x` } />
+						<img data-aos-once="true" data-aos="fade-right" className="relative bottom-10 left-7 filter blur-lg" alt="" src={ blurbox3 } srcSet={ `${ blurbox32x } 2x, ${ blurbox33x } 3x` } />
 					</div>
 					<div data-aos-once="true" data-aos="zoom-in-left" className="w-10/12 mt-8 sm:mt-20 xl:mt-6 mb-10 md:mb-0 md:w-1/2 relative z-10 lg:left-14">
-						<img alt="Two iPhones showing Euchre Night open" src={euchre} srcSet={`${euchre2x} 2x, ${euchre3x} 3x`} />
+						<img alt="Two iPhones showing Euchre Night open" src={ euchre } srcSet={ `${ euchre2x } 2x, ${ euchre3x } 3x` } />
 					</div>
 				</div>
 			</div>
-			{/* END FEATURED PROJECT */}
-			{/* BEGIN MAPPED PROJECTS */}
+			{/* END FEATURED PROJECT */ }
+			{/* BEGIN MAPPED PROJECTS */ }
 			<div id="mapped"></div>
-			{features.map((feature) => {
+			{ features.map((feature, idx) => {
 				return (
-					<div key={uuid()} className="relative bg-black mb-20 sm:mb-32 lg:mb-52 py-5 w-screen">
+					<div key={ idx } className="relative bg-black mb-20 sm:mb-32 lg:mb-52 py-5 w-screen">
 						<ProjectFeature
-							image={feature.image}
-							category={feature.category}
-							title={feature.title}
-							description={feature.description}
-							hashtags={feature.hashtags}
-							visit={feature.visit}
-							frontCode={feature.frontCode}
-							backCode={feature.backCode}
-							reverse={feature.reverse}
+							image={ feature.image }
+							category={ feature.category }
+							title={ feature.title }
+							description={ feature.description }
+							hashtags={ feature.hashtags }
+							visit={ feature.visit }
+							frontCode={ feature.frontCode }
+							backCode={ feature.backCode }
+							reverse={ feature.reverse }
 						/>
 						<div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden w-screen">
-							{!feature.reverse ? (
+							{ !feature.reverse ? (
 								<div className="absolute left-20 bottom-0 z-0 opacity-30 transform rotate-180 scale-90">
 									<img
 										data-aos-offset="200"
@@ -162,8 +161,8 @@ export default function MyWork() {
 										data-aos="fade-left"
 										className="relative left-48 filter blur-2xl"
 										alt=""
-										src={blurbox5}
-										srcSet={`${blurbox52x} 2x, ${blurbox53x} 3x`}
+										src={ blurbox5 }
+										srcSet={ `${ blurbox52x } 2x, ${ blurbox53x } 3x` }
 									/>
 									<img
 										data-aos-offset="200"
@@ -171,8 +170,8 @@ export default function MyWork() {
 										data-aos="fade-right"
 										className="relative right-48 filter blur-2xl"
 										alt=""
-										src={blurbox6}
-										srcSet={`${blurbox62x} 2x, ${blurbox63x} 3x`}
+										src={ blurbox6 }
+										srcSet={ `${ blurbox62x } 2x, ${ blurbox63x } 3x` }
 									/>
 								</div>
 							) : (
@@ -183,18 +182,18 @@ export default function MyWork() {
 										data-aos="fade-left"
 										className="relative right-40 filter blur-2xl"
 										alt=""
-										src={blurbox5}
-										srcSet={`${blurbox52x} 2x, ${blurbox53x} 3x`}
+										src={ blurbox5 }
+										srcSet={ `${ blurbox52x } 2x, ${ blurbox53x } 3x` }
 									/>
-									<img data-aos-offset="200" data-aos-once="true" data-aos="fade-right" className="filter blur-2xl" alt="" src={blurbox6} srcSet={`${blurbox62x} 2x, ${blurbox63x} 3x`} />
+									<img data-aos-offset="200" data-aos-once="true" data-aos="fade-right" className="filter blur-2xl" alt="" src={ blurbox6 } srcSet={ `${ blurbox62x } 2x, ${ blurbox63x } 3x` } />
 								</div>
-							)}
+							) }
 						</div>
 					</div>
 				);
-			})}
-			{/* END MAPPED PROJECTS */}
-			{/* BEGIN MINI PROJECT */}
+			}) }
+			{/* END MAPPED PROJECTS */ }
+			{/* BEGIN MINI PROJECT */ }
 			<div className="flex sm:flex-row flex-col sm:justify-around md:justify-between mx-auto w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 max-width mb-32 space-y-20 sm:space-y-0">
 				<div data-aos-offset="300" data-aos-once="true" data-aos="fade-left" className="flex flex-col justify-between items-center sm:w-3/12 lg:w-1/4 space-y-10">
 					<div>
@@ -215,7 +214,7 @@ export default function MyWork() {
 						</div>
 					</div>
 					<div className="relative bottom-4">
-						<img alt="Screenshot of National Parks website" src={nationalparks} srcSet={`${nationalparks2x} 2x, ${nationalparks3x} 3x`} />
+						<img alt="Screenshot of National Parks website" src={ nationalparks } srcSet={ `${ nationalparks2x } 2x, ${ nationalparks3x } 3x` } />
 					</div>
 				</div>
 				<div data-aos-offset="300" data-aos-once="true" data-aos="fade" className="flex flex-col justify-between items-center  sm:w-3/12 lg:w-1/4 space-y-10">
@@ -237,7 +236,7 @@ export default function MyWork() {
 						</div>
 					</div>
 					<div className="relative bottom-4">
-						<img alt="Screenshot of Weather by Shawn website" src={weatherbyshawn} srcSet={`${weatherbyshawn2x} 2x, ${weatherbyshawn3x} 3x`} />
+						<img alt="Screenshot of Weather by Shawn website" src={ weatherbyshawn } srcSet={ `${ weatherbyshawn2x } 2x, ${ weatherbyshawn3x } 3x` } />
 					</div>
 				</div>
 				<div data-aos-offset="300" data-aos-once="true" data-aos="fade-right" className="flex flex-col justify-between items-center sm:w-3/12 lg:w-1/4 space-y-10">
@@ -255,13 +254,13 @@ export default function MyWork() {
 						</div>
 					</div>
 					<div className="relative bottom-4">
-						<img alt="Screenshot of Sribble blog" src={scribble} srcSet={`${scribble2x} 2x, ${scribble3x} 3x`} />
+						<img alt="Screenshot of Sribble blog" src={ scribble } srcSet={ `${ scribble2x } 2x, ${ scribble3x } 3x` } />
 					</div>
 				</div>
 			</div>
-			{/* END MINI PROJECTS */}
+			{/* END MINI PROJECTS */ }
 			<div className="flex justify-center items-center w-screen mb-10 sm:mb-32 transform rotate-180">
-				<ScrollLink data-aos-offset="100" data-aos-once="true" data-aos="fade" offset={-100} to="top" smooth={true} duration={1000}>
+				<ScrollLink data-aos-offset="100" data-aos-once="true" data-aos="fade" offset={ -100 } to="top" smooth={ true } duration={ 1000 }>
 					<svg className="cursor-pointer animate-bounce" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M30 50V10" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 						<path d="M12.5 32.5L30 50L47.5 32.5" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
