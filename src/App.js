@@ -18,7 +18,7 @@ function App() {
 	}, [])
 
 	return (
-		<div className="min-h-screen font-montserrat flex flex-col justify-between max-w-screen">
+		<div className="min-h-screen font-montserrat flex flex-col justify-between max-w-screen overflow-hidden">
 			{showAlizaModal && <AlizaModal setShowModal={setShowAlizaModal} />}
 			<div className="relative z-0 flex-grow flex flex-col w-full">
 				<Header setShowModal={setShowAlizaModal} />

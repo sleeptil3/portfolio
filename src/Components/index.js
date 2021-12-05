@@ -28,7 +28,7 @@ export const Header = ({ setShowModal }) => {
 	}
 
 	return (
-		<header data-aos-once="true" data-aos="slide-down" className="relative z-10 w-screen sm:h-auto py-2 sm:py-8 px-2 flex items-center justify-center bg-black text-white tracking-wide">
+		<header data-aos-once="true" data-aos="slide-down" className="relative z-10 w-screen overflow-hidden sm:h-auto py-2 sm:py-8 px-2 flex items-center justify-center bg-black text-white tracking-wide">
 			<div className="w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 max-width flex justify-between items-center">
 				<div className="flex flex-col justify-start items-baseline md:flex-row md:space-x-12 lg:space-x-20 flex-wrap">
 					<Link to="/">

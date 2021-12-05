@@ -35,5 +35,3 @@ export default function Aliza() {
 		</div>
 	)
 }
-
-// https://www.youtube.com/watch?v=OecJeRk6fqI
