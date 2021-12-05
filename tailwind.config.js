@@ -1,18 +1,15 @@
-const _ = require('lodash')
-const plugin = require('tailwindcss/plugin')
+const _ = require("lodash")
+const plugin = require("tailwindcss/plugin")
 
 module.exports = {
 	purge: {
-		content: [
-			'./src/*.js',
-			'./src/**/*.js',
-			'./public/index.html'
-		],
+		content: ["./src/*.js", "./src/**/*.js", "./public/index.html"],
 	},
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		fontFamily: {
-			'montserrat': [ '"Montserrat"', 'sans-serif' ],
+			montserrat: ['"Montserrat"', "sans-serif"],
+			script: ["Marck Script", "cursive"],
 		},
 		fontWeight: {
 			regular: 400,
@@ -22,32 +19,32 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				'primary': '#FF00A8',
+				primary: "#FF00A8",
 			},
 			animation: {
-				'fade-from-right': 'fade-right 2s forwards',
-				'fade-from-left': 'fade-left 2s forwards',
-				'fade-from-bottom': 'fade-bottom 2s forwards',
-				'fade': 'fade-in 1s 2s forwards',
+				"fade-from-right": "fade-right 2s forwards",
+				"fade-from-left": "fade-left 2s forwards",
+				"fade-from-bottom": "fade-bottom 2s forwards",
+				fade: "fade-in 1s 2s forwards",
 			},
 			keyframes: {
-				'fade-right': {
-					'0%': { opacity: 0, transform: 'translateX(100px)' },
-					'100%': { opacity: 1, transform: 'translateX(0)' }
+				"fade-right": {
+					"0%": { opacity: 0, transform: "translateX(100px)" },
+					"100%": { opacity: 1, transform: "translateX(0)" },
 				},
-				'fade-left': {
-					'0%': { opacity: 0, transform: 'translateX(-100px)' },
-					'100%': { opacity: 1, transform: 'translateX(0)' }
+				"fade-left": {
+					"0%": { opacity: 0, transform: "translateX(-100px)" },
+					"100%": { opacity: 1, transform: "translateX(0)" },
 				},
-				'fade-bottom': {
-					'0%': { opacity: 0, transform: 'translateY(100px)' },
-					'100%': { opacity: 1, transform: 'translateY(0)' }
+				"fade-bottom": {
+					"0%": { opacity: 0, transform: "translateY(100px)" },
+					"100%": { opacity: 1, transform: "translateY(0)" },
 				},
-				'fade-in': {
-					'0%': { opacity: 0 },
-					'100%': { opacity: 1 }
+				"fade-in": {
+					"0%": { opacity: 0 },
+					"100%": { opacity: 1 },
 				},
-			}
+			},
 		},
 	},
 	variants: {
@@ -55,12 +52,12 @@ module.exports = {
 	},
 	plugins: [
 		plugin(function ({ addComponents, theme }) {
-			const screens = theme('screens', {})
+			const screens = theme("screens", {})
 			const mediaQueries = _.map(screens, (width, breakpoint) => {
 				return {
-					[ `@media (min-width: ${ width })` ]: {
-						'.breakpoint-display::after': {
-							content: `'${ breakpoint }'`,
+					[`@media (min-width: ${width})`]: {
+						".breakpoint-display::after": {
+							content: `'${breakpoint}'`,
 						},
 					},
 				}
@@ -68,17 +65,17 @@ module.exports = {
 
 			addComponents([
 				{
-					'.breakpoint-display': {
-						color: 'white',
-						position: 'fixed',
+					".breakpoint-display": {
+						color: "white",
+						position: "fixed",
 						left: "50%",
 						transform: "translate(-50%)",
 						fontSize: 8,
 						zIndex: 100,
-						backgroundColor: 'green',
-						textTransform: 'uppercase',
-						padding: theme('spacing.1'),
-						'&::after': {
+						backgroundColor: "green",
+						textTransform: "uppercase",
+						padding: theme("spacing.1"),
+						"&::after": {
 							content: `'default'`,
 						},
 					},
