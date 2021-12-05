@@ -1,6 +1,6 @@
 export const logo = {
 	small: (
-		<svg width={39} height={33} viewBox="0 0 39 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg className="animate-pulse transition-transform duration-500 transform hover:scale-125" width={39} height={33} viewBox="0 0 39 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M18.8906 0V32.9177L2.79797 24.5237L18.8906 0Z" fill="#E94F95" />
 			<path d="M19.549 0.0822906V33L35.6416 24.606L19.549 0.0822906Z" fill="#E94F95" />
 			<path d="M4.85536 3.29176L5.94546 6.64674H9.47308L6.61917 8.72022L7.70927 12.0752L4.85536 10.0017L2.00145 12.0752L3.09155 8.72022L0.237638 6.64674H3.76526L4.85536 3.29176Z" fill="white" />

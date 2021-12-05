@@ -1,16 +1,21 @@
 import { Switch, Route } from "react-router-dom"
-import { useState } from "react"
-import Header from "./Components/Header"
+import { useState, useEffect } from "react"
+import Aos from "aos"
+
+import { Header, Footer } from "./Components"
 import MyWork from "./Pages/MyWork"
 import MyInfo from "./Pages/MyInfo"
 import MySkills from "./Pages/MySkills"
-import Footer from "./Components/Footer"
 import ContactForm from "./Pages/ContactForm"
 import EuchreNightSupport from "./Pages/EuchreNightSupport"
 import AlizaModal from "./Aliza/AlizaModal"
 
 function App() {
 	const [showAlizaModal, setShowAlizaModal] = useState(false)
+
+	useEffect(() => {
+		Aos.init({ duration: 2000 })
+	}, [])
 
 	return (
 		<div className="min-h-screen font-montserrat flex flex-col justify-between max-w-screen">
