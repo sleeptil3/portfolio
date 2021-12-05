@@ -15,6 +15,12 @@ export const logo = {
 			<path d="M101.448 9.82544L104.701 19.8395H115.231L106.712 26.0286L109.966 36.0427L101.448 29.8536L92.9291 36.0427L96.1829 26.0286L87.6644 19.8395H98.1938L101.448 9.82544Z" fill="white" />
 		</svg>
 	),
+	cancel: (
+		<svg width={34} height={35} viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<line className="stroke-current" x1="1.49408" y1="32.6524" x2="31.0261" y2="1.04793" stroke="white" strokeWidth={2} strokeLinecap="round" />
+			<line className="stroke-current" x1="2.41421" y1="1.54205" x2={33} y2="32.1278" stroke="white" strokeWidth={2} strokeLinecap="round" />
+		</svg>
+	),
 }
 
 export const present = (
