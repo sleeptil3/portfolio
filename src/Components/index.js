@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
-import Aos from "aos"
+import { useState } from "react"
 import blurbox1 from "../images/blurboxes/1.png"
 import blurbox12x from "../images/blurboxes/1@2x.png"
 import blurbox13x from "../images/blurboxes/1@3x.png"
