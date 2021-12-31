@@ -1,19 +1,12 @@
-import { useLayoutEffect } from 'react'
-import Aos from 'aos'
-import blurbox1 from '../images/blurboxes/1.png'
-import blurbox12x from '../images/blurboxes/1@2x.png'
-import blurbox13x from '../images/blurboxes/1@3x.png'
+import blurbox1 from "../images/blurboxes/1.png"
+import blurbox12x from "../images/blurboxes/1@2x.png"
+import blurbox13x from "../images/blurboxes/1@3x.png"
 
-import blurbox2 from '../images/blurboxes/2.png'
-import blurbox22x from '../images/blurboxes/2@2x.png'
-import blurbox23x from '../images/blurboxes/2@3x.png'
+import blurbox2 from "../images/blurboxes/2.png"
+import blurbox22x from "../images/blurboxes/2@2x.png"
+import blurbox23x from "../images/blurboxes/2@3x.png"
 
 export default function MySkills() {
-
-	useLayoutEffect(() => {
-		Aos.init({ duration: 2000 })
-	}, [])
-
 	return (
 		<div className="flex justify-center items-center mb-10 sm:mb-20 sm:mt-32">
 			<div className="relative flex flex-col sm:flex-row sm:justify-center sm:items-center py-10 px-5 h-full w-11/12 lg:w-10/12 xl:w-9/12 2xl:w-8/12 max-width sm:px-10">
@@ -45,18 +38,8 @@ export default function MySkills() {
 				</div>
 				{/* BLUR BOX */}
 				<div className="absolute right-0 -top-20 z-0 flex-grow-0 opacity-25 transform scale-50 sm:transform-none">
-					<img
-						data-aos-once="true" data-aos="fade-left" className="relative left-32 -top-48 sm:left-10"
-						alt=""
-						src={blurbox1}
-						srcSet={`${blurbox12x} 2x, ${blurbox13x} 3x`}
-					/>
-					<img
-						data-aos-once="true" data-aos="fade-right" className="relative bottom-80 sm:bottom-44 right-24 sm:right-48"
-						alt=""
-						src={blurbox2}
-						srcSet={`${blurbox22x} 2x, ${blurbox23x} 3x`}
-					/>
+					<img data-aos-once="true" data-aos="fade-left" className="relative left-32 -top-48 sm:left-10" alt="" src={blurbox1} srcSet={`${blurbox12x} 2x, ${blurbox13x} 3x`} />
+					<img data-aos-once="true" data-aos="fade-right" className="relative bottom-80 sm:bottom-44 right-24 sm:right-48" alt="" src={blurbox2} srcSet={`${blurbox22x} 2x, ${blurbox23x} 3x`} />
 				</div>
 				{/* END BLUR BOX */}
 			</div>

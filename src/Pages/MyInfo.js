@@ -1,6 +1,3 @@
-import { useLayoutEffect } from "react"
-import Aos from "aos"
-
 import blurbox1 from "../images/blurboxes/1.png"
 import blurbox12x from "../images/blurboxes/1@2x.png"
 import blurbox13x from "../images/blurboxes/1@3x.png"
@@ -11,10 +8,6 @@ import blurbox23x from "../images/blurboxes/2@3x.png"
 import { Link } from "react-router-dom"
 
 export default function MyInfo() {
-	useLayoutEffect(() => {
-		Aos.init({ duration: 2000 })
-	}, [])
-
 	return (
 		<div className="flex justify-center items-start sm:items-center flex-grow max-w-full">
 			<div className="absolute w-full h-full z-0 opacity-20 flex-grow flex justify-center space-x-20 items-center overflow-y-hidden">
